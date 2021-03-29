@@ -29,7 +29,6 @@ func (this *Goft) Handle(httpMethod , relativePath string, handler interface{}) 
 	//		context.String(200, h(context))
 	//	})
 	//}
-
 	if h := Convert(handler); h !=nil {
 		this.g.Handle(httpMethod, relativePath, h)
 	}
